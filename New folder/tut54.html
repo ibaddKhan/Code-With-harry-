@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using Alert,Confirm,Prompt</title>
+</head>
+
+<body>
+    <div class="container">
+        This is a page
+    </div>
+    <script>
+        //Alert in JS
+        //Alert in In-Browser JavaScript Does not return anything
+//  let a = alert("This is a String");
+//  console.log(a)
+
+//Prompt in js
+// let name = prompt("What is your Name?", "Guest");
+// console.log(name);
+
+// //Confirm in Js
+// let DeletePost = confirm("Do You Really Want to Delete This Post?")
+
+// // console.log(DeletePost)
+
+// if(DeletePost){
+//     console.log("Your Post has been Deleted");
+// }
+// else{
+//     console.log("Your Post has not been Deleted")
+// }
+
+let agechecker=prompt("What is you Age")
+if(agechecker>17){
+    console.log("You can apply for the License")
+}
+else if (agechecker<18){
+    console.log("You are not eligible to get a license")
+    alert("You are Underaged")
+}
+else{
+    // console.log("Please enter your age ")
+     alert("Please enter your age in numbers")
+
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid and Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            body {
+                background-color: rgb(55, 248, 255);
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    '  aside  aside  aside  aside'
+                    'footer footer footer footer';
+            }
+
+
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            body {
+                background-color: yellow;
+
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    '  aside  aside  aside  aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-color: green;
+            }
+
+            span {
+                text-align: center;
+            }
+        }
+
+        .bdr {
+            border: 2px solid beige;
+            padding: 5px 20px;
+            background-color: wheat;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+
+        }
+
+        #aside {
+            grid-area: aside;
+
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr" id="navbar">
+            <span>Home</span>
+            <span>Service</span>
+            <span>About</span>
+            <span>Contact</span>
+
+        </nav>
+        <section class="bdr" id="section">
+            <h2>Learn css in urdu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel inventore culpa ratione voluptas.
+                Obcaecati ea ex doloremque recusandae eaque incidunt perspiciatis ullam, officiis voluptatem quas
+                aliquid ducimus? Magnam facilis consequatur ipsum a! Illo nisi, porro sit minima debitis doloremque
+                placeat dicta eius? Vel porro molestias laborum saepe. Ratione debitis praesentium enim non perferendis
+                culpa eum, quam commodi error, vel vitae itaque exercitationem soluta neque autem tenetur tempora rerum
+                optio, dicta sunt amet omnis libero. Officia dolorum quidem deserunt magni illum dolorem consequuntur
+                voluptates, fuga voluptatum magnam, molestiae et! Dolore suscipit, quas voluptatem quo accusamus hic vel
+                tempore deleniti minima sint consequatur nostrum tempora aliquid vero corrupti, neque perferendis
+                architecto ut sit nisi qui ducimus reiciendis a. Dolore error dolorum, neque ab repellendus atque
+                debitis odio quis, omnis ipsam id!</p>
+        </section>
+        <aside class="bdr">
+            <h1>More About Us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright &copy; IBADURREHMAN</footer>
+</body>
+
+</html>

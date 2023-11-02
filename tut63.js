@@ -1,0 +1,69 @@
+// console.log('Hello World')
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end(`<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>pseudo selectors</title>
+      
+  <style>
+      .container{
+          border: 2px solid rgb(97, 214, 250);
+          background-color: antiquewhite;
+          padding: 34px;
+          margin: 34px auto;
+          width: 666px;
+      }
+      a{
+          text-decoration: none;
+      }
+      a:hover{
+          color: rgb(15, 148, 15);
+      }
+      .btn{
+          background-color: aqua;
+          padding: 6px;
+          border: none;
+          border-radius: 11px;
+          cursor: pointer;
+          font-size: 13px ;
+      }
+  
+      button:hover{
+          color: rgb(245, 57, 57);
+      }
+      a:active{
+          background-color: rgb(6, 6, 88);
+      }
+       a:visited{
+        color: rgb(102, 102, 0);
+          
+       }
+  </style>
+  </head>
+  <body>
+      <div class="container" id="cont1">
+          <h3>
+  
+          </h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta expedita repudiandae quidem impedit eius quia nobis dolorem commodi, beatae dolorum necessitatibus, amet voluptatem iusto soluta? Officia, velit impedit iste deserunt voluptas nobis dolorum accusamus alias?</p>
+          <a href="https://www.google.com/    "class="btn">Read more</a>
+          <button class="btn">Contact us</button>
+      </div>
+  </body>
+  </html>`);
+//   res.end('Hello World This is Ibad Khan');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});                     

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background-color: aquamarine;
+        }
+
+        .container {
+
+
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;
+            background-color: bisque;
+
+        }
+
+        .item {
+            border: 3px solid gray;
+            margin: 3px 13px;
+            padding: 3px 13px;
+            background: rgb(214, 204, 204);
+        }
+
+        #fruit {
+            float: right;
+            width: 48%;
+
+        }
+
+        #computer {
+            float: left;
+            float: left;
+
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: right; */
+            clear: both;
+            width: 48%;
+
+        }
+
+        #glasses {
+            clear: both;
+            /* float: left; */
+            width: 48%;
+        }
+
+        p,
+        h1 {
+            text-align: justify;
+
+        }
+
+        h1 {
+
+            margin: auto;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>WELCOME TO MY STORE
+            <!-- <marquee behavior" direction=""></marquee> -->
+        </h1>
+        <div id="fruit" class="item">
+            <h3>fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod nesciunt
+                molestias voluptate totam itaque et laudantium facilis, est dolores veniam quibusdam ab. Ipsam,
+                voluptatem laudantium? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, aperiam modi.
+                Cupiditate explicabo enim ducimus aliquid optio asperiores error ut nisi! Vitae, a, beatae maiores
+                aliquam ipsa molestias magnam nihil, esse dicta accusamus quam.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod nesciunt
+                molestias voluptate totam itaque et laudantium facilis, est dolores veniam quibusdam ab. Ipsam,
+                voluptatem laudantium ? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iusto blanditiis
+                sit. Error enim, laboriosam vel quaerat voluptas magni nesciunt, maiores quidem impedit consectetur
+                dolor aperiam. Est libero vitae, aliquid ea natus molestiae. Praesentium.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod nesciunt
+                molestias voluptate totam itaque et laudantium facilis, est dolores veniam quibusdam ab. Ipsam,
+                voluptatem laudantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus
+                dolorum neque laborum eveniet eum, atque ullam. Magni natus sapiente cum odit numquam perspiciatis sunt
+                quod doloribus ut, optio non sed minima soluta totam!</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>stationary</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod nesciunt
+                molestias voluptate totam itaque et laudantium facilis, est dolores veniam quibusdam ab. Ipsam,
+                voluptatem laudantium? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, et illum ipsa
+                inventore odit voluptates doloremque debitis magnam minima totam fugiat fugit minus laboriosam, ab
+                veritatis aperiam ducimus ratione molestiae, impedit deleniti? Illum, molestias?</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+*{ font-family: 'Courier New', Courier, monospace;}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    list-style: none;
+    padding: 3px 9px;
+}
+a{
+text-decoration: none;
+}

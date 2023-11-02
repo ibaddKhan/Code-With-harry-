@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    header{
+        /* display: inline; */
+        /* border: 2px solid red; */
+        margin: auto;
+        width: 1000px;
+        /* background-color: aqua; */
+        
+    }
+    img{
+        width: 34px;;
+        margin: auto;
+        display: block;
+    }
+   h3{
+    text-align: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin:0px ;
+        /* border: 2px solid red; */
+        
+     
+    }
+    .pic{
+        border: 2px solid rgb(0, 0, 0);
+        margin: auto;
+        padding: 7px 0px 0px 0px;
+    }
+    
+    .navbar {
+            background-color: rgb(10, 1, 1);
+            border-radius: 30px;
+            margin:  -10px 0px 0px 0px ;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+            
+        margin: 0px 0px;}
+            
+       
+            .navbar li a:hover{
+           
+            color: rgb(40, 220, 226);
+        
+
+        }
+
+        .search {
+            float: right;
+            color: white;
+            /* margin: px; */
+            padding: 12px 75px;
+
+            /* margin */
+
+        }
+        .navbar input{
+            /* color: rgb(37, 35, 32); */
+            border: 2px solid rgb(75, 75, 75);
+            border-radius: 5px;
+            padding: 3px 4px;
+            width: 129px;
+        }
+        .box{
+            border: 4px solid rgb(0, 0, 0);
+            /* margin: 100px; */
+            background-color: rgb(124, 124, 124);
+            padding: 23px;
+            /* display: inline-block; */
+            width: 30%;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 15px 15px;
+        }
+       
+
+        .image{
+            /* margin: auto; */
+            padding: auto
+            ;
+        }
+        .container{
+            width: 1000px;
+            margin:auto
+            /* display: inline-block; */
+        }
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+    
+                <!-- <li class="image"><img src="https://scontent.fkhi17-1.fna.fbcdn.net/v/t39.30808-1/271543960_456104982806109_4895830769783206086_n.jpg?stp=c0.14.160.160a_dst-jpg_p160x160&_nc_cat=105&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=l7prTbsoEAwAX-XV3fr&_nc_ht=scontent.fkhi17-1.fna&oh=00_AfDHlzjnTbVoAf9lyGpxfdig80uZ4cXpiz7J07oYSHiBcQ&oe=636DB0C6" alt=""> </li> -->
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Services</a> </li>
+                <li><a href="https:google.com">Contact us </a> </li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search a WEBSITE">
+                </div>
+            </ul>
+        </nav>
+    </header>
+<header class="top">
+  <div class="pic">  <!-- <img src="https://www.codewithharry.com/_next/image/?url=%2Fimg%2Flogo-blue.png&w=48&q=75" alt=""> -->
+    <img src="https://scontent.fkhi17-1.fna.fbcdn.net/v/t39.30808-1/271543960_456104982806109_4895830769783206086_n.jpg?stp=c0.14.160.160a_dst-jpg_p160x160&_nc_cat=105&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=l7prTbsoEAwAX-XV3fr&_nc_ht=scontent.fkhi17-1.fna&oh=00_AfDHlzjnTbVoAf9lyGpxfdig80uZ4cXpiz7J07oYSHiBcQ&oe=636DB0C6" alt="">
+    <h3 >Welcome to Ibad,s Blog</h3>
+</div>
+    <div class="container">
+        <div class="box">
+        <h4 class="class">Heading</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam voluptate aliquid, sed nam fuga, cum deserunt illum assumenda perspiciatis rem nesciunt soluta et. Et alias nostrum mollitia provident ducimus quia recusandae voluptatum aspernatur eligendi vero.</p>
+</div>
+        <div class="box">
+        <h4 class="class">Heading</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam voluptate aliquid, sed nam fuga, cum deserunt illum assumenda perspiciatis rem nesciunt soluta et. Et alias nostrum mollitia provident ducimus quia recusandae voluptatum aspernatur eligendi vero.</p>
+</div>
+        <div class="box">
+        <h4 class="class">Heading</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam voluptate aliquid, sed nam fuga, cum deserunt illum assumenda perspiciatis rem nesciunt soluta et. Et alias nostrum mollitia provident ducimus quia recusandae voluptatum aspernatur eligendi vero.</p>
+</div>
+    </div>
+   
+</header>    
+</body>
+</html>
